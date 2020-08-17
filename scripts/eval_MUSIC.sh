@@ -28,4 +28,4 @@ OPTS+="--frameRate 8 "
 OPTS+="--audLen 65535 "
 OPTS+="--audRate 11025 "
 
-python -u main.py $OPTS
+python3 -m pdb main.py $OPTS

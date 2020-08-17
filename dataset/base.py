@@ -134,7 +134,9 @@ class BaseDataset(torchdata.Dataset):
             else:
                 audio_raw = audio_raw[:, 0]
         else:
-            audio_raw, rate = librosa.load(path, sr=None, mono=True)
+            print("base.py file line 137 audio path = " + path)
+            
+            audio_raw, rate = librosa.load(path, mono=True)
 
         return audio_raw, rate
 

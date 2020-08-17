@@ -49,7 +49,13 @@ class ModelBuilder():
         net_sound.apply(self.weights_init)
         if len(weights) > 0:
             print('Loading weights for net_sound')
-            net_sound.load_state_dict(torch.load(weights))
+            
+            if torch.cuda.is_available():
+                map_location=lambda storage, loc: storage.cuda()
+            else:
+                map_location='cpu'    
+
+            net_sound.load_state_dict(torch.load(weights,map_location=map_location))
 
         return net_sound
 
@@ -70,7 +76,12 @@ class ModelBuilder():
 
         if len(weights) > 0:
             print('Loading weights for net_frame')
-            net.load_state_dict(torch.load(weights))
+            if torch.cuda.is_available():
+                map_location=lambda storage, loc: storage.cuda()
+            else:
+                map_location='cpu'
+                
+            net.load_state_dict(torch.load(weights,map_location=map_location))
         return net
 
     def build_synthesizer(self, arch, fc_dim=64, weights=''):
@@ -84,7 +95,12 @@ class ModelBuilder():
         net.apply(self.weights_init)
         if len(weights) > 0:
             print('Loading weights for net_synthesizer')
-            net.load_state_dict(torch.load(weights))
+            if torch.cuda.is_available():
+                map_location=lambda storage, loc: storage.cuda()
+            else:
+                map_location='cpu'
+                
+            net.load_state_dict(torch.load(weights,map_location=map_location))
         return net
 
     def build_criterion(self, arch):

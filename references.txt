@@ -18,3 +18,6 @@ https://ostechnix.com/find-size-directory-linux/#:~:text=To%20find%20out%20the%2
 
 Debugging python code
 https://docs.python.org/3/library/pdb.html
+
+raw text compare online
+https://text-compare.com/

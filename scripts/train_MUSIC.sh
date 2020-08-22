@@ -1,9 +1,9 @@
 #!/bin/bash
 
 OPTS=""
-OPTS+="--id MUSIC "
-OPTS+="--list_train data/train.csv "
-OPTS+="--list_val data/val.csv "
+OPTS+="--id MUSIC_train "
+OPTS+="--list_train /mnt/data/data/project_data/train.csv "
+OPTS+="--list_val /mnt/data/data/project_data/val.csv "
 
 # Models
 OPTS+="--arch_sound unet7 "

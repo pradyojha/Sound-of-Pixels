@@ -33,11 +33,7 @@ class MUSICMixDataset(BaseDataset):
         idx_margin = max(
             int(self.fps * 8), (self.num_frames // 2) * self.stride_frames)
         for n, infoN in enumerate(infos):
-            print("music.py line 36 n = " + str(n))            
             path_audioN, path_frameN, count_framesN = infoN
-            print("music.py line 38 path_audioN = " + str(path_audioN))
-            print("music.py line 39 path_frameN = " + str(path_frameN))
-            print("music.py line 40 count_framesN = " + str(count_framesN))
 
             if self.split == 'train':
                 # random, not to sample start and end n-frames
@@ -45,15 +41,11 @@ class MUSICMixDataset(BaseDataset):
                     idx_margin+1, int(count_framesN)-idx_margin)
             else:
                 center_frameN = int(count_framesN) // 2
-                
             center_frames[n] = center_frameN
-            path_frameN = os.path.splitext(path_frameN)[0]
-            print("music.py line 51 path_frameN = " + str(path_frameN))
-            
 
             # absolute frame/audio paths
             for i in range(self.num_frames):
-                idx_offset = (i - self.num_frames // 2) * self.stride_frames                
+                idx_offset = (i - self.num_frames // 2) * self.stride_frames
                 path_frames[n].append(
                     os.path.join(
                         path_frameN,
@@ -63,13 +55,10 @@ class MUSICMixDataset(BaseDataset):
         # load frames and audios, STFT
         try:
             for n, infoN in enumerate(infos):
-                print("music.py line 62 path_frames[n] = " + str(path_frames[n]))
                 frames[n] = self._load_frames(path_frames[n])
                 # jitter audio
                 # center_timeN = (center_frames[n] - random.random()) / self.fps
                 center_timeN = (center_frames[n] - 0.5) / self.fps
-                
-                print("music.py line 71 path_audios[n] = " + str(path_audios[n]))
                 audios[n] = self._load_audio(path_audios[n], center_timeN)
             mag_mix, mags, phase_mix = self._mix_n_and_stft(audios)
 

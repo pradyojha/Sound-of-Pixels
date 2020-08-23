@@ -25,9 +25,9 @@ class video_to_frames:
       if not os.path.exists(frame_files_path):
         os.mkdir(frame_files_path)
 
-      jpg_files = glob.glob(frame_files_path + "/" +'*.jpg')
-      if len(jpg_files) > 0 :
-        return
+      #jpg_files = glob.glob(frame_files_path + "/" +'*.jpg')
+      #if len(jpg_files) > 0 :
+      #  return
 
       print("Extracting frames for video - " + video_file_with_path)
       query = "ffmpeg -i " + '"' + video_file_with_path +'"' + " -vf fps=" + str(fps) + " " + '"'+frame_files_path+'"'+ "/%06d.jpg"

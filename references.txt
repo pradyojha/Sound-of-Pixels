@@ -22,5 +22,6 @@ https://docs.python.org/3/library/pdb.html
 raw text compare online
 https://text-compare.com/
 
-conda clean all unused packages and associated tar balls
-https://stackoverflow.com/questions/51960539/where-does-conda-clean-remove-packages-from
+conda remove env
+conda env remove --name env-name
+conda clean --all

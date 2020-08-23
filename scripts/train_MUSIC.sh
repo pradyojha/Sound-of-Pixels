@@ -1,7 +1,7 @@
 #!/bin/bash
 
 OPTS=""
-OPTS+="--id MUSIC "
+OPTS+="--id MUSIC_train "
 OPTS+="--list_train data/train.csv "
 OPTS+="--list_val data/val.csv "
 

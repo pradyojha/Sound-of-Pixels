@@ -1,0 +1,23 @@
+conda cheat sheet
+https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf
+
+basic audio analysis using librosa
+https://www.kdnuggets.com/2020/02/audio-data-analysis-deep-learning-python-part-1.html
+
+using python librosa to find out istft
+https://www.programcreek.com/python/example/98224/librosa.istft
+
+how to copy files with particular extension 
+https://superuser.com/questions/299938/how-can-i-recursively-copy-files-by-file-extension-preserving-directory-structu
+
+Remote copy from pc to server
+https://www.tecmint.com/rsync-local-remote-file-synchronization-commands/#:~:text=Copy%20a%20File%20from%20a,option%20and%20perform%20data%20transfer.
+
+find size of a folder
+https://ostechnix.com/find-size-directory-linux/#:~:text=To%20find%20out%20the%20size,du%20stands%20for%20disk%20usage.&text=Let%20us%20type%20the%20'du,and%20see%20what%20it%20displays.&text=As%20you%20see%20above%2C%20du,directories%20in%20the%20current%20directory.
+
+Debugging python code
+https://docs.python.org/3/library/pdb.html
+
+raw text compare online
+https://text-compare.com/

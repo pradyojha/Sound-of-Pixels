@@ -5,3 +5,8 @@ conda install -c conda-forge librosa
 conda install -c conda-forge mir_eval
 conda install -c menpo imageio
 conda install -c anaconda opencv
+
+# for python 37
+conda create --name py37 python=3.7
+conda activate py37
+conda install pytorch==1.5.1 torchvision==0.6.1 cudatoolkit=9.2 torchaudio==0.5.0 -c pytorch

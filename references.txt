@@ -1,6 +1,9 @@
 solving GLIBXX issue
 https://github.com/rusty1s/pytorch_geometric/issues/1001
 
+Installing previous Pytorch versions
+https://pytorch.org/get-started/previous-versions/
+
 conda cheat sheet
 https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf
 
@@ -34,4 +37,7 @@ conda clean --all
 Removing a package in conda
 --------------------------
 conda remove -n env-name package-name
+
+Cloning out all remote branches in GIT
+https://stackoverflow.com/questions/67699/how-to-clone-all-remote-branches-in-git
 

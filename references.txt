@@ -41,3 +41,7 @@ conda remove -n env-name package-name
 Cloning out all remote branches in GIT
 https://stackoverflow.com/questions/67699/how-to-clone-all-remote-branches-in-git
 
+Trello Update
+https://trello.com/c/GhiSJ9Sg/220-learning-resources
+
+

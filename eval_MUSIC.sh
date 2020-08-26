@@ -30,4 +30,7 @@ OPTS+="--audLen 65535 "
 OPTS+="--audRate 11025 "
 
 #python3 -m pdb main.py $OPTS
+source activate py36
+export LD_LIBRARY_PATH=/home/pojha/.conda/envs/py36/lib/:$LD_LIBRARY_PATH
 python main.py $OPTS
+source deactivate

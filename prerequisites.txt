@@ -6,3 +6,7 @@ conda install -c conda-forge mir_eval
 conda install -c menpo imageio
 conda install -c anaconda opencv
 
+#to fix libgcc issue if at all
+conda install -c omgarcia gcc-6 
+conda install libgcc            
+

@@ -10,7 +10,7 @@ from video_to_frames import video_to_frames
 
 def main(task):
     json_file_path = './MUSIC_dataset/'
-    data_folder_path = '../data/'
+    data_folder_path = 'data/pojha/research-data/Sound-of-Pixels/'
     for file in os.listdir(json_file_path):
         if file.endswith('.json'):
             file_path =  os.path.join(json_file_path,file)

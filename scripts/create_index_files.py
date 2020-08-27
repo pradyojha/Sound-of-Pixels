@@ -29,7 +29,7 @@ if __name__ == '__main__':
 
     # find all audio/frames pairs
     infos = []
-    audio_files = find_recursive(args.root_audio, ext='.mp4') #changed from ,mp3 to .mp4 audio
+    audio_files = find_recursive(args.root_audio, ext='.mp3') #changed from ,mp3 to .mp4 audio
     for audio_path in audio_files:
         frame_path = audio_path.replace(args.root_audio, args.root_frame) \
                                .replace('.mp3', '.mp4')

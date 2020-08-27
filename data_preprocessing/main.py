@@ -38,7 +38,7 @@ def main(task):
                         #full_video_file_path = '"' + full_video_file_path + '"'
                         if os.path.exists(full_video_file_path):
                           #print(full_video_file_path)
-                          video_frames.save_to_frames(full_video_file_path,30)
+                          video_frames.save_to_frames(full_video_file_path,8)
                         else:
                           print("video file does not exist - " + full_video_file_path)
                           video_file_with_path = full_video_file_path

@@ -4,3 +4,5 @@
 4 - Create the csv train and vasl csv files by running scripts for scripts/create_index_files.py file with argumnets lsited in arguments.txt file
 5 - Download the models by running bash scripts from scripts/download_trained_model.sh
 6 - Run the code from main.py file by invoking scripts at scripts/eval_MUSIC.sh
+7 on Deep Vision 
+CUDA_VISIBLE_DEVICES=5 nohup python3 main.py &

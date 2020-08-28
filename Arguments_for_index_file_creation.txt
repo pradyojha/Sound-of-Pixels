@@ -1,1 +1,0 @@
-python scripts/create_index_files.py --root_audio data/pojha/research-data/Sound-of-Pixels/audio/ --root_frame data/pojha/research-data/Sound-of-Pixels/frames/ --fps 8 --path_output data/pojha/research-data/Sound-of-Pixels/

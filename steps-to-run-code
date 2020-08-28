@@ -1,0 +1,6 @@
+1 - set up the conda environment : read pre-requsites.txt
+2 - donwload dataset by running scripts from data_preprocessing/main.py
+3 - Generate video frames by running scripts from data_preprocessing/main.py
+4 - Create the csv train and vasl csv files by running scripts for scripts/create_index_files.py file with argumnets lsited in arguments.txt file
+5 - Download the models by running bash scripts from scripts/download_trained_model.sh
+6 - Run the code from main.py file by invoking scripts at scripts/eval_MUSIC.sh

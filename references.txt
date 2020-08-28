@@ -31,6 +31,13 @@ https://docs.python.org/3/library/pdb.html
 raw text compare online
 https://text-compare.com/
 
+CUDA driver version check
+nvcc --version
+
+number of graphics card and jobs running
+nvidia-smi
+
+
 
 Removing environment in Conda
 -----------------------------

@@ -1,0 +1,1 @@
+python3 scripts/create_index_files.py --root_audio data/audio/ --root_frame data/frames/ --fps 8 --path_output data/

@@ -9,7 +9,7 @@ from video_mp4_to_audio_mp3 import video_mp4_to_audio_mp3_converter
 from video_to_frames import video_to_frames
 
 def main(task):
-    json_file_path = './MUSIC_dataset/'
+    json_file_path = 'data_preprocessing/MUSIC_dataset/'
     data_folder_path = 'data/pojha/research-data/Sound-of-Pixels/'
     for file in os.listdir(json_file_path):
         if file.endswith('.json'):
